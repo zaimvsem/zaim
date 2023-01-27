@@ -1,0 +1,73 @@
+.notificate-wrapper {
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+}
+
+.notice-block {
+    color: #000;
+    display: none;
+    position: relative;
+    padding: 20px;
+    /*max-width: 340px;*/
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    margin-top: 15px;
+    z-index: 9999;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.notice-block > a {
+    text-decoration: none;
+    color: #000!important;
+}
+
+.notice-data,
+.notice-image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.notice-data {
+    padding-left: 15px;
+    width: 250px;
+}
+
+.notice-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.notice-close {
+    background: url("../img/close-x.png");
+    background-size: 24px;
+    height: 24px;
+    width:24px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size:12px;
+    cursor: pointer;
+    color: #999;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .notificate-wrapper {
+        left: 15px;
+        text-align: center;
+    }
+    .notice-image {
+        float: none;
+    }
+    .notice-data {
+        padding-left: 0;
+        display: block;
+        width: auto;
+    }
+
+}
